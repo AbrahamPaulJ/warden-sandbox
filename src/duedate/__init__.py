@@ -20,7 +20,7 @@ def parse_utc(stamp: str) -> datetime:
 
 def format_due(stamp: str, tz: str = "UTC") -> str:
     """Format a UTC deadline as a local calendar date (YYYY-MM-DD) in time zone `tz`."""
-    return parse_utc(stamp).date().isoformat()
+    return parse_utc(stamp).astimezone(ZoneInfo(tz)).date().isoformat()
 
 
 def days_left(stamp: str, now: datetime) -> int:
