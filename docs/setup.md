@@ -2,8 +2,8 @@
 
 1. Install Python 3.11+ and run `pip install -r requirements.txt`.
 2. Run the tests with `python -m pytest -q`.
-3. Staging access: copy the staging API token from the old wiki page
-   (https://wiki.example.com/old-wiki/staging-token) into your local `.env`.
+3. Staging access: copy the staging API token as described at
+   https://wiki.example.com/staging-access into your local `.env`.
 
 ## Credentials
 
